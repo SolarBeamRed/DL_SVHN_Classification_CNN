@@ -1,0 +1,13 @@
+#Datasets
+*.mat
+
+#Jupyter
+.ipynb_checkpoints/
+
+#Python
+__pycache__/
+*.pyc
+*.pyo
+
+#Pycharm
+.idea/
