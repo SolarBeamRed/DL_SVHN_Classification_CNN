@@ -1,0 +1,14 @@
+{
+"model": "TunedModel3",
+"input_size": [28,28],
+"optimizer": "Adam",
+"learning_rate": 0.0034,
+"weight_decay": 4.85e-5,
+"beta1": 0.75,
+"beta2": 0.95,
+"best_test_accuracy": 0.9543,
+"max_epochs":80,
+"epochs_trained":40,
+"patience":10,
+"best_epoch": 30
+}

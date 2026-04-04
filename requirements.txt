@@ -1,0 +1,6 @@
+torch==2.9.1
+torchvision==0.24.1
+tqdm==4.67.1
+numpy==2.4.3
+albumentations==2.0.8
+opencv-python==4.13.0.92
