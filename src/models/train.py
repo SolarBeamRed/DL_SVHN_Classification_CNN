@@ -71,7 +71,9 @@ def train_model():
                 break
 
     #Restoring best model
-    checkpoint = torch.load(MODEL_DIR.parent / 'train_checkpoint.pth')
+    checkpoint = torch.load(MODEL_DIR.parent / 'train_checkpoint.pth', map_location=device)
     model.load_state_dict(checkpoint['model_state'])
     torch.save(model.state_dict(), MODEL_DIR)
     print(f'Model has been trained. Saved model in {MODEL_DIR.parent}')
+
+if __name__ == "__main__": train_model()

@@ -26,3 +26,5 @@ def evaluate_model():
             total_samples += y.size(0)
 
     print('accuracy on test data: ', correct_preds / total_samples)
+
+if __name__ == "__main__": evaluate_model()
