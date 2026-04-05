@@ -154,7 +154,7 @@ python src.models.evaluate
 ~~~
 5. Summarise model:<br>
 ~~~
-python src.models.train
+python src.models.summary
 ~~~
 ---
 
