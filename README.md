@@ -77,8 +77,9 @@ Custom CNN with:
 - Loss: CrossEntropyLoss  
 - Optimizer: Adam (tuned parameters)  
 - Early stopping based on validation loss  
-- Model checkpointing (best model saved)  
-
+- Model checkpointing (best model saved)<br>  
+Training loop for the best model took around an hour to complete on my RTX3050.
+Early stopping was triggered at epoch 40, and the best epoch was epoch 30.
 ---
 
 ### Hyperparameter Tuning
@@ -89,8 +90,8 @@ Custom CNN with:
   - Optimizer choice and related beta parameters
   - Dropout  
   - Architecture-related parameters, such as number of Conv and dense layers, and number of filters/neurons for each.
-  - Usage of BatchNorm for dense layers (better results without BatchNorm for dense layer) 
-
+  - Usage of BatchNorm for dense layers (better results without BatchNorm for dense layer)<br><br> 
+Study consisted of 80 trials, and usage of MedianPruner() for pruning. The entire study optimisation consumed around 15-20 minutes of time.
 ---
 
 ## Results
@@ -144,14 +145,17 @@ pip install -r requirements.txt
 
 3. Train model: <br>
 ~~~
-python src/train.py
+python src.models.train
 ~~~
 
 4. Evaluate model:<br>
 ~~~
-python src/evaluate.py
+python src.models.evaluate
 ~~~
-
+5. Summarise model:<br>
+~~~
+python src.models.train
+~~~
 ---
 
 ## Notes
