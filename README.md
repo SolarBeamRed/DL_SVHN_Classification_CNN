@@ -145,16 +145,16 @@ pip install -r requirements.txt
 
 3. Train model: <br>
 ~~~
-python src.models.train
+python -m src.models.train
 ~~~
 
 4. Evaluate model:<br>
 ~~~
-python src.models.evaluate
+python -m src.models.evaluate
 ~~~
 5. Summarise model:<br>
 ~~~
-python src.models.summary
+python -m src.models.summary
 ~~~
 ---
 
